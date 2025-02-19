@@ -1,0 +1,22 @@
+{
+  "name": "designoo-website-clean",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^4.0.7",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.7",
+    "gsap": "^3.12.7",
+    "splitting": "^1.1.0"
+  }
+}

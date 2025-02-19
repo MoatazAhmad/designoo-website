@@ -1,0 +1,84 @@
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  pointer-events: none; 
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: #ff6600;
+  transform-origin: left center;
+}
+
+.btn-animation {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-animation span {
+  z-index: 1;
+  position: relative;
+}
+
+
+.btn-animation::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: var(--design-hover-beach);
+  transition: width 0.5s, height 0.5s;
+}
+
+.btn-animation.location::before {
+  background: var(--light-pink);
+}
+
+.btn-animation:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.link-animation {
+  overflow: hidden;
+  position: relative;
+}
+
+.link-animation h2,
+.link-animation p {
+  z-index: 1;
+  position: relative;
+}
+
+.link-animation::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: var(--design-beach);
+  transition: width 0.5s, height 0.5s;
+}
+
+.link-animation:hover::before {
+  width: 1500px;
+  height: 1500px;
+}
+
+.link-animation:hover .overlay {
+  background: transparent;
+}
+
