@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Designo - Explore our office locations in Canada, Australia, and United Kingdom. Contact us today for your project inquiries."
+      data-i18n="locationsTranslations.metaDescription"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="locationsTranslations.title">
+      Designo Locations | Canada, Australia, United Kingdom
+    </title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Our Locations - Designo" data-i18n="locationsTranslations.title" />
+    <meta property="og:description" content="Designo - Explore our office locations in Canada, Australia, and United Kingdom. Contact us today for your project inquiries." data-i18n="locationsTranslations.metaDescription" />
+    <meta property="og:image" content="https://www.yourwebsite.com/src/assets/images/desktop-compressed-webP/logo.webp" />
+    <meta property="og:url" content="https://www.designo.com/locations.html" />
+    <meta property="og:type" content="website" />
+    <script type="module" crossorigin src="/designoo-website/js/animations.js"></script>
+    <link rel="stylesheet" crossorigin href="/designoo-website/css/animations.css">
+  </head>
+  <body>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <div class="container">
+      <header
+        class="flex justify-between items-center pb-8 pt-14 relative px-5 lg:px-0 slide-in"
+      >
+        <a
+          class="w-52 block"
+          href="../index.html"
+          aria-label="Designo - Home"
+          data-i18n-aria="header.ariaLabel"
+        >
+          <div
+            class="blurred-img w-[208px] h-[28px]"
+            style="
+              background-image: url(/designoo-website/assets/images/logo-dark-lqip.webp);
+            "
+          >
+            <img
+              class="max-h-full max-w-full bg-transparent"
+              src="/designoo-website/assets/images/logo.webp"
+              alt="Designo Company Logo - Dark"
+              fetchpriority="high"
+              width="208"
+              height="28"
+              id="themeToggleImages"
+            />
+          </div>
+        </a>
+        <button
+          class="nav-toggle md:hidden cursor-pointer"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+          aria-controls="main-navigation"
+          data-i18n-aria="header.navToggleAriaLabel"
+        >
+          <img
+            class="hamburger-img"
+            src="/designoo-website/assets/images/icon-hamburger.svg"
+            alt="Open navigation menu"
+            aria-hidden="true"
+            fetchpriority="high"
+            id="themeToggleImages"
+          />
+          <img
+            class="hamburger-img-closed hidden"
+            src="/designoo-website/assets/images/icon-close.svg"
+            alt="Close navigation menu"
+            aria-hidden="true"
+            fetchpriority="high"
+            id="themeToggleImages"
+          />
+        </button>
+        <nav
+          class="hidden absolute md:relative md:block w-full md:w-auto top-full md:top-auto left-0 md:left-auto z-50"
+          id="main-navigation"
+          aria-label="Main Navigation"
+        >
+          <ul
+            class="items-center p-10 md:p-0 flex flex-col md:flex-row gap-5 md:gap-5 text-2xl md:text-base tracking-widest bg-[var(--design-bg-black)] md:bg-transparent text-white md:text-[var(--system-black)] pt-[60px] pb-[40px]"
+          >
+            <li>
+              <select
+                aria-label="Select Language"
+                class="language-selector border rounded-md bg-red-300"
+              >
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+              </select>
+            </li>
+            <li>
+              <a
+                data-i18n="header.navItems.aboutUs"
+                id="listLink"
+                class="uppercase hover:underline"
+                href="./about-us.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="header.navItems.locations"
+                id="listLink"
+                class="uppercase hover:underline"
+                href="./locations.html"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="header.navItems.contact"
+                id="listLink"
+                class="uppercase hover:underline"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="cursor-pointer"
+                id="theme-toggle"
+                aria-label="Toggle theme"
+                data-i18n="header.navItems.toggleTheme"
+              >
+                🌓
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1
+          class="sr-only"
+          data-i18n="locationsTranslations.heroSection.heading"
+        >
+          Our Locations
+        </h1>
+
+        <section
+          class="location location-canada flex flex-col-reverse lg:flex-row lg:justify-between lg:gap-7 mt-[30px] mb-[60px]"
+        >
+          <div
+            class="location-address md:rounded-[20px] bg-[var(--light-pink)] info relative px-4 md:p-24 lg:p-0 lg:m-0 lg:pl-[5%] lg:rtl:pr-[5%] text-[var(--design-white)] flex flex-col lg:justify-center gap-2 md:gap-4 lg:gap-8 items-center lg:items-start text-center lg:text-left flex-1 md:mt-6 md:mb-6"
+          >
+            <h2
+              data-i18n="locationsTranslations.locations[0].country"
+              class="reveal w-full md:text-start text-4xl font-semibold lg:font-medium md:text-[48px] md:leading-[48px] overflow-hidden py-4 text-[var(--design-beach)]"
+              data-splitting
+            >
+              Canada
+            </h2>
+            <address
+              class="text-[var(--design-text-black)] w-full text-center md:text-start leading-[25px] md:flex md:justify-between md:items-start md:min-w-[65%] lg:justify-start lg:gap-32"
+            >
+              <p class="my-7 md:my-0">
+                <strong data-i18n="locationsTranslations.locations[0].office"
+                  >Designo Central Office</strong
+                >
+                <span
+                  class="block"
+                  data-i18n="locationsTranslations.locations[0].address1"
+                  >3886 Wellington Street</span
+                >
+                <span
+                  class="block"
+                  data-i18n="locationsTranslations.locations[0].address2"
+                  >Toronto, Ontario M9C 3J5</span
+                >
+              </p>
+              <p class="mb-7 md:my-0">
+                <span class="block"
+                  ><strong
+                    data-i18n="locationsTranslations.locations[0].contact"
+                    >Contact Us (Central Office)</strong
+                  ></span
+                >
+                <span class="block">
+                  <a
+                    href="tel:+12538638967"
+                    data-i18n="locationsTranslations.locations[0].phone"
+                    >P: +1 253-863-8967</a
+                  >
+                </span>
+                <span class="block">
+                  <a
+                    href="mailto:contact@designo.com"
+                    data-i18n="locationsTranslations.locations[0].email"
+                    >M: contact@designo.com</a
+                  >
+                </span>
+              </p>
+            </address>
+          </div>
+          <div class="location-map md:rounded-[20px] overflow-hidden">
+            <div class="map-container relative w-full">
+              <iframe
+                loading="lazy"
+                class="w-full h-[330px]"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=2.100791931152344%2C48.75324624963088%2C2.4544143676757817%2C48.93580731608049&amp;layer=mapnik"
+                title="Map of Canada location"
+                width="600"
+                height="330"
+              ></iframe>
+              <div
+                id="map-overlay"
+                class="absolute top-0 left-0 w-full h-full bg-transparent cursor-pointer"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="location location-australia flex flex-col-reverse lg:flex-row lg:justify-between lg:gap-7 mt-[30px] mb-[60px]"
+        >
+          <div class="location-map md:rounded-[20px] overflow-hidden">
+            <div class="map-container relative w-full">
+              <iframe
+                loading="lazy"
+                class="w-full h-[330px]"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=2.100791931152344%2C48.75324624963088%2C2.4544143676757817%2C48.93580731608049&amp;layer=mapnik"
+                title="Map of Australia location"
+                width="600"
+                height="330"
+              ></iframe>
+              <div
+                class="map-overlay absolute top-0 left-0 w-full h-full bg-transparent cursor-pointer"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="location-address md:rounded-[20px] bg-[var(--light-pink)] info relative px-4 md:p-24 lg:p-0 lg:m-0 lg:pl-[5%] lg:rtl:pr-[5%] text-[var(--design-white)] flex flex-col lg:justify-center gap-2 md:gap-4 lg:gap-8 items-center lg:items-start text-center lg:text-left flex-1 md:mt-6 md:mb-6"
+          >
+            <h2
+              data-i18n="locationsTranslations.locations[1].country"
+              class="reveal w-full md:text-start text-4xl font-semibold lg:font-medium md:text-[48px] md:leading-[48px] overflow-hidden py-4 text-[var(--design-beach)]"
+              data-splitting
+            >
+              Australia
+            </h2>
+            <address
+              class="text-[var(--design-text-black)] w-full text-center md:text-start leading-[25px] md:flex md:justify-between md:items-start md:min-w-[65%] lg:justify-start lg:gap-32"
+            >
+              <p class="my-7 md:my-0">
+                <strong data-i18n="locationsTranslations.locations[1].office"
+                  >Designo Central Office</strong
+                >
+                <span
+                  class="block"
+                  data-i18n="locationsTranslations.locations[1].office"
+                  >3886 Wellington Street</span
+                >
+                <span
+                  class="block"
+                  data-i18n="locationsTranslations.locations[1].address"
+                  >Toronto, Ontario M9C 3J5</span
+                >
+              </p>
+              <p class="mb-7 md:my-0">
+                <span class="block"
+                  ><strong
+                    data-i18n="locationsTranslations.locations[1].contact"
+                    >Contact Us (Central Office)</strong
+                  ></span
+                >
+                <span class="block">
+                  <a
+                    href="tel:+12538638967"
+                    data-i18n="locationsTranslations.locations[1].phone"
+                    >P: +1 253-863-8967</a
+                  >
+                </span>
+                <span class="block">
+                  <a
+                    href="mailto:contact@designo.com"
+                    data-i18n="locationsTranslations.locations[1].email"
+                    >M: contact@designo.com</a
+                  >
+                </span>
+              </p>
+            </address>
+          </div>
+        </section>
+
+        <section
+          class="location location-uk flex flex-col-reverse lg:flex-row lg:justify-between lg:gap-7 mt-[30px] mb-[60px]"
+        >
+          <div
+            class="location-address md:rounded-[20px] bg-[var(--light-pink)] info relative px-4 md:p-24 lg:p-0 lg:m-0 lg:pl-[5%] lg:rtl:pr-[5%] text-[var(--design-white)] flex flex-col lg:justify-center gap-2 md:gap-4 lg:gap-8 items-center lg:items-start text-center lg:text-left flex-1 md:mt-6 md:mb-6"
+          >
+            <h2
+              class="reveal w-full md:text-start text-4xl font-semibold lg:font-medium md:text-[48px] md:leading-[48px] overflow-hidden py-4 text-[var(--design-beach)]"
+              data-splitting
+              data-i18n="locationsTranslations.locations[2].country"
+            >
+              United Kingdom
+            </h2>
+            <address
+              class="text-[var(--design-text-black)] w-full text-center md:text-start leading-[25px] md:flex md:justify-between md:items-start md:min-w-[65%] lg:justify-start lg:gap-32"
+            >
+              <p class="my-7 md:my-0">
+                <strong data-i18n="locationsTranslations.locations[2].office"
+                  >Designo Central Office</strong
+                >
+                <span
+                  class="block"
+                  data-i18n="locationsTranslations.locations[2].address1"
+                  >3886 Wellington Street</span
+                >
+                <span
+                  class="block"
+                  data-i18n="locationsTranslations.locations[2].address2"
+                  >Toronto, Ontario M9C 3J5</span
+                >
+              </p>
+              <p class="mb-7 md:my-0">
+                <span class="block"
+                  ><strong
+                    data-i18n="locationsTranslations.locations[2].contact"
+                    >Contact Us (Central Office)</strong
+                  ></span
+                >
+                <span class="block">
+                  <a
+                    href="tel:+12538638967"
+                    data-i18n="locationsTranslations.locations[2].phone"
+                    >P: +1 253-863-8967</a
+                  >
+                </span>
+                <span class="block">
+                  <a
+                    href="mailto:contact@designo.com"
+                    data-i18n="locationsTranslations.locations[2].email"
+                    >M: contact@designo.com</a
+                  >
+                </span>
+              </p>
+            </address>
+          </div>
+          <div class="location-map md:rounded-[20px] overflow-hidden">
+            <div class="map-container relative w-full">
+              <iframe
+                loading="lazy"
+                class="w-full h-[330px]"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=2.100791931152344%2C48.75324624963088%2C2.4544143676757817%2C48.93580731608049&amp;layer=mapnik"
+                title="Map of United Kingdom location"
+                width="600"
+                height="330"
+              ></iframe>
+              <div
+                class="map-overlay absolute top-0 left-0 w-full h-full bg-transparent cursor-pointer"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section
+          class="cta flex flex-col lg:flex-row lg:justify-around items-center gap-8 mt-28 py-20 bg-[var(--design-beach)] w-[calc(100%-40px)] sm:max-lg:max-w-[700px] mx-auto rounded-3xl mb-[-100px] z-10 relative slide-in"
+        >
+          <div
+            class="text text-[var(--design-white)] px-4 md:px-8 text-center flex flex-col gap-4 items-center"
+          >
+            <h2
+              class="text-4xl font-semibold lg:font-medium md:text-[40px]"
+              data-i18n="locationsTranslations.ctaSection.heading"
+            >
+              Let’s talk about your project
+            </h2>
+            <p
+              class="max-w-[400px]"
+              data-i18n="locationsTranslations.ctaSection.description"
+            >
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow.
+            </p>
+          </div>
+          <a
+            class="btn-animation w-fit bg-[var(--design-white)] text-[var(--system-black)] font-semibold py-3 px-6 rounded-lg shadow transition-colors duration-200 uppercase"
+            href="./contact.html"
+          >
+            <span data-i18n="locationsTranslations.ctaSection.getInTouch"
+              >Get in Touch</span
+            >
+          </a>
+        </section>
+      </main>
+    </div>
+    <footer
+      class="bg-[#1d1c1e] text-white flex flex-col md:px-[60px] gap-5 justify-center items-center pt-12"
+    >
+      <div class="container">
+        <nav
+          class="md:flex md:justify-between md:items-center md:w-full md:pt-32 md:pb-5 md:border-b md:border-white/10"
+        >
+          <a
+            class="w-64 md:w-52 block pt-24 pb-16 md:pt-0 md:pb-0"
+            href="../index.html"
+            aria-label="Designo - Home"
+            data-i18n-aria="header.ariaLabel"
+          >
+            <img
+              class="max-h-full max-w-full"
+              src="/designoo-website/assets/images/logo-white.webp"
+              alt="Designo Company Logo - White"
+              fetchpriority="high"
+            />
+          </a>
+          <ul
+            class="flex flex-col md:flex-row gap-5 text-center text-2xl md:text-base tracking-widest md:h-full md:items-center"
+            aria-label="Footer Navigation"
+          >
+            <li>
+              <a
+                class="uppercase hover:underline"
+                href="./about.html"
+                data-i18n="footer.navItems.aboutUs"
+                >Our Company</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase hover:underline"
+                href="./locations.html"
+                data-i18n="footer.navItems.locations"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase hover:underline"
+                href="./contact.html"
+                data-i18n="footer.navItems.contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="md:w-full md:flex md:justify-between md:items-start pb-10 pt-5"
+        >
+          <address
+            class="text-[#888889] text-center leading-[25px] md:flex md:justify-between md:items-start md:min-w-[65%] lg:justify-start lg:gap-32"
+          >
+            <p class="my-7 md:my-0">
+              <strong data-i18n="footer.address.office"
+                >Designo Central Office</strong
+              >
+              <span class="block" data-i18n="footer.address.street"
+                >3886 Wellington Street</span
+              >
+              <span class="block" data-i18n="footer.address.city"
+                >Toronto, Ontario M9C 3J5</span
+              >
+            </p>
+            <p class="mb-7 md:my-0">
+              <span class="block" data-i18n="footer.address.contact"
+                >Contact Us (Central Office)</span
+              >
+              <span class="block"
+                >
+                <a href="tel:+12538638967" data-i18n="footer.address.phone"
+                  >P: +1 253-863-8967</a
+                ></span
+              >
+              <span class="block"
+                >
+                <a
+                  href="mailto:contact@designo.com"
+                  data-i18n="footer.address.email"
+                  >M: contact@designo.com</a
+                ></span
+              >
+            </p>
+          </address>
+          <ul class="social-links flex gap-3.5 pb-5">
+            <li>
+              <a
+                href="https://www.facebook.com/YourPage"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-facebook.svg"
+                  alt=""
+                  loading="lazy"
+                  fetchpriority="low"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/YourChannel"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-youtube.svg"
+                  alt=""
+                  loading="lazy"
+                  fetchpriority="low"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/YourProfile"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-twitter.svg"
+                  alt=""
+                  loading="lazy"
+                  fetchpriority="low"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pinterest.com/YourProfile"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Pinterest"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-pinterest.svg"
+                  alt=""
+                  loading="lazy"
+                  fetchpriority="low"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/YourProfile"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-instagram.svg"
+                  alt=""
+                  loading="lazy"
+                  fetchpriority="low"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

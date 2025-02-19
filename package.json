@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.7",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.12.7",
     "splitting": "^1.1.0"
   }

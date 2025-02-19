@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Founded in 2010, Designo is a creative agency that produces lasting results. We craft innovative brands, products, and digital experiences for startups, corporations, and nonprofits."
+      data-i18n="aboutUs.metaDescription"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.designo.com/about.html" />
+    <title data-i18n="aboutUs.title">About Us - Designo Creative Agency</title>
+
+    <!-- Open Graph meta tags -->
+    <meta
+      property="og:title"
+      content="About Us - Designo Creative Agency"
+      data-i18n="aboutUs.title"
+    />
+    <meta
+      property="og:description"
+      content="Founded in 2010, Designo is a creative agency that produces lasting results. We craft innovative brands, products, and digital experiences for startups, corporations, and nonprofits."
+      data-i18n="aboutUs.metaDescription"
+    />
+    <meta
+      property="og:image"
+      content="https://www.yourwebsite.com/src/assets/images/desktop-compressed-webP/logo.webp"
+    />
+    <meta property="og:url" content="https://www.designo.com/about.html" />
+    <meta property="og:type" content="website" />
+    <script type="module" crossorigin src="/designoo-website/js/animations.js"></script>
+    <link rel="stylesheet" crossorigin href="/designoo-website/css/animations.css">
+  </head>
+  <body>
+    <div
+      class="progress-container"
+      role="progressbar"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="0"
+    >
+      <div class="progress-bar"></div>
+    </div>
+    <div class="container">
+      <header
+        class="flex justify-between items-center pb-8 pt-14 relative px-5 lg:px-0"
+      >
+        <a class="w-52 block" href="../index.html" aria-label="Designo - Home">
+          <div
+            class="blurred-img"
+            style="
+              background-image: url(/designoo-website/assets/images/logo-dark-lqip.webp);
+              width: 208px;
+              height: 28px;
+            "
+          >
+            <img
+              class="max-h-full max-w-full bg-transparent"
+              src="/designoo-website/assets/images/logo.webp"
+              id="themeToggleImages"
+              alt="Designo Company Logo - Dark"
+              fetchPriority="high"
+            />
+          </div>
+        </a>
+        <button
+          class="nav-toggle md:hidden cursor-pointer"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+          aria-controls="main-navigation"
+        >
+          <img
+            class="hamburger-img"
+            id="themeToggleImages"
+            src="/designoo-website/assets/images/icon-hamburger.svg"
+            alt="Open navigation menu"
+            aria-hidden="true"
+            fetchPriority="high"
+          />
+          <img
+            class="hamburger-img-closed hidden"
+            id="themeToggleImages"
+            src="/designoo-website/assets/images/icon-close.svg"
+            alt="Close navigation menu"
+            aria-hidden="true"
+            fetchPriority="high"
+          />
+        </button>
+        <nav
+          class="hidden absolute md:relative md:block w-full md:w-auto top-full md:top-auto left-0 md:left-auto z-50"
+          id="main-navigation"
+          aria-label="Main Navigation"
+        >
+          <ul
+            class="p-10 md:p-0 flex flex-col md:flex-row gap-5 md:gap-5 text-2xl md:text-base tracking-widest bg-[var(--design-bg-black)] md:bg-transparent text-white md:text-[var(--system-black)] pt-[60px] pb-[40px] items-center"
+          >
+            <li>
+              <select
+                aria-label="Select Language"
+                class="language-selector border rounded-md bg-red-300"
+              >
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+              </select>
+            </li>
+            <li>
+              <a
+                data-i18n="header.navItems.aboutUs"
+                data-text="About Us"
+                class="uppercase hover:underline"
+                href="./about-us.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="header.navItems.locations"
+                class="uppercase hover:underline"
+                href="./locations.html"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="header.navItems.contact"
+                class="uppercase hover:underline"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="cursor-pointer"
+                id="theme-toggle"
+                aria-label="Toggle theme"
+                data-i18n="header.navItems.toggleTheme"
+              >
+                🌓
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section
+          class="about-us flex flex-col-reverse lg:flex-row lg:justify-between bg-[var(--design-beach)] md:rounded-[20px] md:overflow-hidden mt-[30px] mb-[60px]"
+        >
+          <div
+            class="about-us-information info relative px-4 md:px-8 lg:pl-[8%] text-[var(--design-white)] flex flex-col lg:justify-center gap-2 md:gap-4 lg:gap-8 items-center lg:items-start text-center lg:text-left flex-1 lg:max-w-[650px] md:mt-6 md:mb-6"
+          >
+            <h1
+              class="reveal text-4xl font-semibold lg:font-medium md:text-[48px] md:leading-[48px] overflow-hidden py-4"
+              data-splitting
+              data-i18n="aboutUs.heroSection.heading"
+              >
+              About Us
+            </h1>
+            <p
+              class="max-w-[400px] pb-6 overflow-hidden rtl:text-right"
+              data-i18n="aboutUs.heroSection.description"
+            >
+              Founded in 2010, we are a creative agency that produces lasting
+              results for our clients. We’ve partnered with many startups,
+              corporations, and nonprofits alike to craft designs that make real
+              impact. We’re always looking forward to creating brands, products,
+              and digital experiences that connect with our clients' audiences.
+            </p>
+          </div>
+          <div
+            class="blurred-img overflow-hidden max-h-[500px] min-w-[375px] min-h-[375px] lg:min-w-auto"
+            style="
+              background-image: url(/designoo-website/assets/images/image-about-hero-lqip.webp);
+            "
+          >
+            <img
+              src="/designoo-website/assets/images/image-about-hero.webp"
+              alt="Creative workspace showcasing our design process"
+              class="w-full lg:w-[470px] h-full max-h-full object-contain"
+              width="470"
+              height="auto"
+            />
+          </div>
+        </section>
+        <section
+          class="world-class-talent flex flex-col lg:flex-row lg:justify-between bg-[var(--light-pink)] md:rounded-[20px] md:overflow-hidden mt-[30px] mb-[60px]"
+        >
+          <div
+            class="blurred-img overflow-hidden max-h-[500px] min-w-[375px] min-h-[375px] lg:min-w-auto"
+            style="
+              background-image: url(/designoo-website/assets/images/image-world-class-talent-lqip.webp);
+            "
+          >
+            <img
+              src="/designoo-website/assets/images/image-world-class-talent.webp"
+              alt="Team of world-class creative talent"
+              class="w-full lg:w-[470px] h-full max-h-full object-contain"
+              loading="lazy"
+              width="470"
+              height="auto"
+            />
+          </div>
+          <div
+            class="world-class-talent-information rtl:text-right info relative px-4 md:px-8 flex flex-col lg:justify-center gap-0 md:gap-2 lg:gap-4 items-center lg:items-center text-center lg:text-left flex-1 lg:max-w-[650px]"
+          >
+            <h2
+              class="reveal text-4xl font-semibold lg:font-medium md:text-[48px] md:leading-[48px] overflow-hidden py-4 text-[var(--design-beach)]"
+              data-splitting
+              data-i18n="aboutUs.worldClassTalent.heading"
+            >
+              World-class talent
+            </h2>
+            <p
+              class="max-w-[600px] pb-6 overflow-hidden"
+              data-i18n="aboutUs.worldClassTalent.description1"
+            >
+              We are a crew of strategists, problem-solvers, and technologists.
+              Every design is thoughtfully crafted from concept to launch,
+              ensuring success in its given market. We are constantly updating
+              our skills in a myriad of platforms.
+            </p>
+            <p
+              class="max-w-[600px] pb-6 overflow-hidden"
+              data-i18n="aboutUs.worldClassTalent.description2"
+            >
+              Our team is multi-disciplinary and we are not merely interested in
+              form — content and meaning are just as important. We give great
+              importance to craftsmanship, service, and prompt delivery. Clients
+              have always been impressed with our high-quality outcomes that
+              encapsulate their brand’s story and mission.
+            </p>
+          </div>
+        </section>
+        <section
+          class="company-locations flex flex-col lg:flex-row lg:justify-around lg:items-center md:px-5 md:my-28 gap-10"
+        >
+          <div
+            class="slideScaleRotateFade flex flex-col md:flex-row lg:flex-col items-center gap-8 text-center md:justify-around max-h-[400px]"
+          >
+            <img
+              class="rounded-full value-1"
+              src="/designoo-website/assets/images/illustration-canada.svg"
+              alt="Illustration representing Canada"
+              loading="lazy"
+              width="100"
+              height="100"
+            />
+            <div class="md:text-left lg:text-center flex flex-col items-center">
+              <h3
+                class="font-medium text-[20px] leading-[26px] tracking-[5px] text-[var(--design-text-black)] uppercase mb-8"
+                data-i18n="locationsTranslations.locations[0].country"
+              >
+                Canada
+              </h3>
+              <a
+                class="btn-animation location w-fit bg-[var(--design-hover-beach)] text-[var(--system-black)] font-semibold py-3 px-6 rounded-lg shadow transition-colors duration-200 uppercase"
+                href="./locations.html"
+              >
+                <span data-i18n="locationsTranslations.seeMore"
+                  >see location</span
+                >
+              </a>
+            </div>
+          </div>
+          <div
+            class="slideScaleRotateFade flex flex-col md:flex-row lg:flex-col items-center gap-8 text-center md:justify-around max-h-[400px]"
+          >
+            <img
+              class="rounded-full value-3"
+              src="/designoo-website/assets/images/illustration-australia.svg"
+              alt="Illustration representing Australia"
+              loading="lazy"
+              width="100"
+              height="100"
+            />
+            <div class="md:text-left lg:text-center flex flex-col items-center">
+              <h3
+                class="font-medium text-[20px] leading-[26px] tracking-[5px] text-[var(--design-text-black)] uppercase mb-8"
+                data-i18n="locationsTranslations.locations[1].country"
+              >
+                Australia
+              </h3>
+              <a
+                class="btn-animation location w-fit bg-[var(--design-hover-beach)] text-[var(--system-black)] font-semibold py-3 px-6 rounded-lg shadow transition-colors duration-200 uppercase"
+                href="./locations.html"
+              >
+                <span data-i18n="locationsTranslations.seeMore"
+                  >see location</span
+                >
+              </a>
+            </div>
+          </div>
+          <div
+            class="slideScaleRotateFade flex flex-col md:flex-row lg:flex-col items-center gap-8 text-center md:justify-around max-h-[400px]"
+          >
+            <img
+              class="rounded-full value-2"
+              src="/designoo-website/assets/images/illustration-united-kingdom.svg"
+              alt="Illustration representing United Kingdom"
+              loading="lazy"
+              width="100"
+              height="100"
+            />
+            <div class="md:text-left lg:text-center flex flex-col items-center">
+              <h3
+                class="font-medium text-[20px] leading-[26px] tracking-[5px] text-[var(--design-text-black)] uppercase mb-8"
+                data-i18n="locationsTranslations.locations[2].country"
+              >
+                United Kingdom
+              </h3>
+              <a
+                class="btn-animation location w-fit bg-[var(--design-hover-beach)] text-[var(--system-black)] font-semibold py-3 px-6 rounded-lg shadow transition-colors duration-200 uppercase"
+                href="./locations.html"
+              >
+                <span data-i18n="locationsTranslations.seeMore"
+                  >see location</span
+                >
+              </a>
+            </div>
+          </div>
+        </section>
+        <section
+          class="the-real-deal flex flex-col-reverse lg:flex-row lg:justify-between bg-[var(--light-pink)] md:rounded-[20px] md:overflow-hidden mt-[30px] mb-[60px]"
+        >
+          <div
+            class="the-real-deal-information mt-4 relative px-4 md:px-8 lg:pl-20 flex flex-col lg:justify-center gap-0 md:gap-2 lg:gap-4 items-center lg:items-start text-center lg:text-left flex-1 lg:max-w-[650px] rtl:text-right"
+          >
+            <h2
+              class="reveal text-4xl font-semibold lg:font-medium md:text-[48px] md:leading-[48px] overflow-hidden py-5 text-[var(--design-beach)]"
+              data-splitting
+              data-i18n="aboutUs.theRealDeal.heading"
+            >
+              The real deal
+            </h2>
+            <p
+              class="max-w-[600px] pb-6"
+              data-i18n="aboutUs.theRealDeal.description1"
+            >
+              As strategic partners in our clients’ businesses, we are ready to
+              take on any challenge as our own. Solving real problems requires
+              empathy and collaboration, and we strive to bring a fresh
+              perspective to every opportunity. We make design and technology
+              more accessible and give you tools to measure success.
+            </p>
+            <p
+              class="max-w-[600px] pb-6"
+              data-i18n="aboutUs.theRealDeal.description2"
+            >
+              We are visual storytellers in appealing and captivating ways. By
+              combining business and marketing strategies, we inspire audiences
+              to take action and drive real results.
+            </p>
+          </div>
+          <div
+            class="blurred-img overflow-hidden min-w-[375px] max-h-[400px] lg:min-h-[640px]"
+            style="
+              background-image: url(/designoo-website/assets/images/image-real-deal-lqip.webp);
+            "
+          >
+            <img
+              src="/designoo-website/assets/images/image-real-deal.webp"
+              alt="Image illustrating our commitment to delivering real results"
+              class="w-full h-full max-h-full lg:w-fit lg:max-h-full object-contain"
+              loading="lazy"
+              width="640"
+              height="auto"
+            />
+          </div>
+        </section>
+        <section
+          class="cta flex flex-col lg:flex-row lg:justify-around items-center gap-8 mt-28 py-20 bg-[var(--design-beach)] w-[calc(100%-40px)] sm:max-lg:max-w-[700px] mx-auto rounded-3xl mb-[-100px] z-10 relative"
+        >
+          <div
+            class="text text-[var(--design-white)] px-4 md:px-8 text-center flex flex-col gap-4 items-center"
+          >
+            <h2
+              class="text-4xl font-semibold lg:font-medium md:text-[40px]"
+              data-i18n="ctaSection.heading"
+            >
+              Let’s talk about your project
+            </h2>
+            <p class="max-w-[400px]" data-i18n="ctaSection.description">
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow.
+            </p>
+          </div>
+          <a
+            class="btn-animation w-fit bg-[var(--design-white)] text-[var(--system-black)] font-semibold py-3 px-6 rounded-lg shadow transition-colors duration-200 uppercase"
+            href="./contact.html"
+          >
+            <span data-i18n="ctaSection.getInTouch">Get in Touch</span>
+          </a>
+        </section>
+      </main>
+    </div>
+    <footer
+      class="bg-[#1d1c1e] text-white flex flex-col md:px-[60px] gap-5 justify-center items-center pt-12"
+    >
+      <div class="container">
+        <nav
+          class="md:flex md:justify-between md:items-center md:w-full md:pt-32 md:pb-5 md:border-b md:border-white/10"
+        >
+          <a
+            class="w-64 md:w-52 block pt-24 pb-16 md:pt-0 md:pb-0"
+            href="../index.html"
+            aria-label="Designo - Home"
+            data-i18n-aria="header.ariaLabel"
+          >
+            <img
+              class="max-h-full max-w-full"
+              src="/designoo-website/assets/images/logo-white.webp"
+              alt="Designo Company Logo - White"
+              loading="lazy"
+              width="208"
+              height="28"
+            />
+          </a>
+          <ul
+            class="flex flex-col md:flex-row gap-5 text-center text-2xl md:text-base tracking-widest md:h-full md:items-center"
+            aria-label="Footer Navigation"
+          >
+            <li>
+              <a
+                class="uppercase hover:underline"
+                href="./about-us.html"
+                data-i18n="footer.navItems.aboutUs"
+                >Our Company</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase hover:underline"
+                href="./locations.html"
+                data-i18n="footer.navItems.locations"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase hover:underline"
+                href="./contact.html"
+                data-i18n="footer.navItems.contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="md:w-full md:flex md:justify-between md:items-start pb-10 pt-5"
+        >
+          <address
+            class="text-[#888889] text-center leading-[25px] md:flex md:justify-between md:items-start md:min-w-[65%] lg:justify-start lg:gap-32"
+          >
+            <p class="my-7 md:my-0">
+              <strong data-i18n="footer.address.office"
+                >Designo Central Office</strong
+              >
+              <span class="block" data-i18n="footer.address.street"
+                >3886 Wellington Street</span
+              >
+              <span class="block" data-i18n="footer.address.city"
+                >Toronto, Ontario M9C 3J5</span
+              >
+            </p>
+            <p class="mb-7 md:my-0">
+              <span class="block" data-i18n="footer.address.contactUs"
+                >Contact Us (Central Office)</span
+              >
+              <span class="block">
+                <a href="tel:+12538638967" data-i18n="footer.address.phone"
+                  >P: +1 253-863-8967</a
+                ></span
+              >
+              <span class="block">
+                <a
+                  href="mailto:contact@designo.com"
+                  data-i18n="footer.address.email"
+                  >M: contact@designo.com</a
+                ></span
+              >
+            </p>
+          </address>
+          <ul class="social-links flex gap-3.5 pb-5">
+            <li>
+              <a href="https://www.facebook.com/YourPage">
+                <img
+                  src="/designoo-website/assets/images/icon-facebook.svg"
+                  alt="Visit our Facebook page"
+                  data-i18n-alt="footer.socialLinks.facebook"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/YourChannel">
+                <img
+                  src="/designoo-website/assets/images/icon-youtube.svg"
+                  alt="Watch our YouTube videos"
+                  data-i18n-alt="footer.socialLinks.youtube"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/YourProfile">
+                <img
+                  src="/designoo-website/assets/images/icon-twitter.svg"
+                  alt="Follow us on Twitter"
+                  data-i18n-alt="footer.socialLinks.twitter"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/YourProfile">
+                <img
+                  src="/designoo-website/assets/images/icon-pinterest.svg"
+                  alt="Explore our Pinterest boards"
+                  data-i18n-alt="footer.socialLinks.pinterest"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/YourProfile">
+                <img
+                  src="/designoo-website/assets/images/icon-instagram.svg"
+                  alt="See our Instagram photos"
+                  data-i18n-alt="footer.socialLinks.instagram"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

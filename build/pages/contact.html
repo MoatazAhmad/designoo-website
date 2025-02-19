@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Contact Designo for innovative digital solutions. Let's discuss your project, idea, or feedback and create unique digital experiences."
+      data-i18n="contactTranslations.metaDescription"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="contactTranslations.title">Contact Us - Designo</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Contact Us - Designo" data-i18n="contactTranslations.title" />
+    <meta property="og:description" content="Contact Designo for innovative digital solutions. Let's discuss your project, idea, or feedback and create unique digital experiences." data-i18n="contactTranslations.metaDescription" />
+    <meta property="og:image" content="https://www.yourwebsite.com/src/assets/images/desktop-compressed-webP/logo.webp" />
+    <meta property="og:url" content="https://www.designo.com/contact.html" />
+    <meta property="og:type" content="website" />
+    <script type="module" crossorigin src="/designoo-website/js/contact.js"></script>
+    <link rel="modulepreload" crossorigin href="/designoo-website/js/animations.js">
+    <link rel="stylesheet" crossorigin href="/designoo-website/css/animations.css">
+  </head>
+  <body>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <div class="container">
+      <header
+        class="flex justify-between items-center pb-8 pt-14 relative px-5 lg:px-0 slide-in"
+      >
+        <a
+          class="w-52 block"
+          href="../index.html"
+          aria-label="Designo - Home"
+          data-i18n-aria="header.ariaLabel"
+        >
+          <div
+            class="blurred-img"
+            style="
+              background-image: url(/designoo-website/assets/images/logo-dark-lqip.webp);
+              width: 208px;
+              height: 28px;
+            "
+          >
+            <img
+              class="max-h-full max-w-full bg-transparent"
+              src="/designoo-website/assets/images/logo.webp"
+              alt="Designo Company Logo - Dark"
+              id="themeToggleImages"
+              fetchPriority="high"
+              width="208"
+              height="28"
+            />
+          </div>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle md:hidden cursor-pointer"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+          aria-controls="main-navigation"
+          data-i18n-aria="header.navToggleAriaLabel"
+        >
+          <img
+            class="hamburger-img"
+            id="themeToggleImages"
+            src="/designoo-website/assets/images/icon-hamburger.svg"
+            alt="Open navigation menu"
+            aria-hidden="true"
+            fetchPriority="high"
+          />
+          <img
+            class="hamburger-img-closed hidden"
+            id="themeToggleImages"
+            src="/designoo-website/assets/images/icon-close.svg"
+            alt="Close navigation menu"
+            aria-hidden="true"
+            fetchPriority="high"
+          />
+        </button>
+        <nav
+          class="hidden absolute md:relative md:block w-full md:w-auto top-full md:top-auto left-0 md:left-auto z-50"
+          id="main-navigation"
+          aria-label="Main Navigation"
+        >
+          <ul
+            class="p-10 md:p-0 flex flex-col md:flex-row gap-5 md:gap-5 text-2xl md:text-base tracking-widest bg-[var(--design-bg-black)] md:bg-transparent text-white md:text-[var(--system-black)] pt-[60px] pb-[40px] items-center"
+          >
+            <li>
+              <select
+                aria-label="Select Language"
+                class="language-selector border rounded-md bg-red-300"
+              >
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+              </select>
+            </li>
+            <li>
+              <a
+                data-i18n="header.navItems.aboutUs"
+                class="uppercase hover:underline"
+                href="./about-us.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="header.navItems.locations"
+                class="uppercase hover:underline"
+                href="./locations.html"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a
+                data-i18n="header.navItems.contact"
+                class="uppercase hover:underline"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                type="button"
+                class="cursor-pointer"
+                id="theme-toggle"
+                aria-label="Toggle theme"
+                data-i18n="header.navItems.toggleTheme"
+              >
+                🌓
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section
+          class="contact bg-[var(--design-beach)] text-[var(--design-white)] md:rounded-[20px] md:overflow-hidden py-12 md:mt-[30px] mb-[60px] flex flex-col lg:flex-row gap-10"
+        >
+          <h2 class="sr-only">Contact Us Section</h2>
+          <div
+            class="info text-center rtl:text-right md:text-left lg:flex-1 rtl:pr-7"
+          >
+            <h1
+              class="reveal text-4xl font-semibold lg:font-medium md:text-[48px] md:leading-[48px] md:pl-10 overflow-hidden py-4"
+              data-splitting
+              data-i18n="contactTranslations.heroSection.heading"
+            >
+              Contact Us
+            </h1>
+            <p
+              class="p-5 md:pl-10 md:rtl:pr-0 md:pt-10"
+              data-i18n="contactTranslations.heroSection.description"
+            >
+              Ready to take it to the next level? Let’s talk about your project
+              or idea and find out how we can help your business grow. If you
+              are looking for unique digital experiences that are relatable to
+              your users, drop us a line.
+            </p>
+          </div>
+          <form
+            class="flex flex-col gap-8 px-4 md:pl-10 lg:flex-1"
+            id="contactForm"
+            novalidate
+          >
+            <div class="form-item relative">
+              <input
+                class="w-[95%] pl-[5%] border-b border-solid outline-none focus:border-b-2"
+                type="text"
+                name="nameInput"
+                id="nameInput"
+                required
+                placeholder="Name"
+                aria-label="Name"
+                data-i18n-placeholder="contactTranslations.contactForm.name"
+                autocomplete="name"
+              />
+              <p
+                id="nameInputError"
+                class="hidden absolute top-0 right-5 rtl:right-auto rtl:left-5 italic font-bold"
+                data-i18n="contactTranslations.contactForm.nameInputErrorMassage"
+                aria-live="polite"
+              >
+                Please enter your name
+              </p>
+            </div>
+            <div class="form-item relative">
+              <input
+                class="w-[95%] pl-[5%] border-b border-solid outline-none focus:border-b-2"
+                id="emailInput"
+                name="emailInput"
+                type="email"
+                required
+                placeholder="Email Address"
+                aria-label="Email Address"
+                data-i18n-placeholder="contactTranslations.contactForm.email"
+                autocomplete="email"
+              />
+              <p
+                id="emailInputError"
+                aria-live="polite"
+                class="hidden absolute top-0 right-5 rtl:right-auto rtl:left-5 font-bold italic"
+                data-i18n="contactTranslations.contactForm.emailInputErrorMassage"
+              >
+                Please enter a valid email
+              </p>
+            </div>
+            <div class="form-item relative">
+              <input
+                class="w-[95%] pl-[5%] border-b border-solid outline-none focus:border-b-2 rtl:text-right"
+                type="tel"
+                id="phoneInput"
+                name="phoneInput"
+                placeholder="Phone"
+                required
+                aria-label="Phone"
+                data-i18n-placeholder="contactTranslations.contactForm.phone"
+                autocomplete="tel"
+              />
+              <p
+                id="phoneInputError"
+                aria-live="polite"
+                class="hidden absolute top-0 right-5 rtl:right-auto rtl:left-5 italic font-bold"
+                data-i18n="contactTranslations.contactForm.phoneInputErrorMassage"
+              >
+                Please enter your phone number
+              </p>
+            </div>
+            <div class="form-item relative">
+              <textarea
+                class="w-[95%] pl-[5%] border-b border-solid outline-none focus:border-b-2 resize-none"
+                placeholder="Your Message"
+                id="message"
+                name="message"
+                cols="3"
+                rows="3"
+                required
+                aria-label="Message"
+                data-i18n-placeholder="contactTranslations.contactForm.message"
+              ></textarea>
+              <p
+                id="messageError"
+                aria-live="polite"
+                class="hidden absolute top-0 right-5 rtl:right-auto rtl:left-5 italic font-bold"
+                data-i18n="contactTranslations.contactForm.messageInputErrorMassage"
+              >
+                Cannot be empty
+              </p>
+            </div>
+            <button
+              type="submit"
+              class="btn-animation self-center flex location w-fit bg-[var(--design-hover-beach)] text-[var(--system-black)] font-semibold py-3 px-6 rounded-lg shadow transition-colors duration-200 uppercase cursor-pointer"
+            >
+              <span data-i18n="contactTranslations.contactForm.submit"
+                >Submit</span
+              >
+            </button>
+          </form>
+        </section>
+        <section
+          class="company-locations flex flex-col lg:flex-row lg:justify-around lg:items-center md:px-5 md:my-28 gap-10 mb-12"
+        >
+          <h2 class="sr-only">Our Locations</h2>
+          <div
+            class=" slideScaleRotateFade flex flex-col md:flex-row lg:flex-col items-center gap-8 text-center md:justify-around max-h-[400px]"
+          >
+            <img
+              class="rounded-full value-1"
+              src="/designoo-website/assets/images/illustration-canada.svg"
+              alt="Illustration representing Canada"
+              loading="lazy"
+            />
+            <div class="md:text-left lg:text-center flex flex-col items-center">
+              <h3
+                class="reveal font-medium text-[20px] leading-[26px] tracking-[5px] text-[var(--design-text-black)] uppercase mb-8"
+                data-splitting
+                data-i18n="locationsTranslations.locations[0].country"
+              >
+                Canada
+              </h3>
+              <a
+                class="btn-animation location w-fit bg-[var(--design-hover-beach)] text-[var(--system-black)] font-semibold py-3 px-6 rounded-lg shadow transition-colors duration-200 uppercase"
+                href="./locations.html"
+              >
+                <span data-i18n="locationsTranslations.seeMore">
+                  See Location
+                </span></a
+              >
+            </div>
+          </div>
+          <div
+            class=" slideScaleRotateFade flex flex-col md:flex-row lg:flex-col items-center gap-8 text-center md:justify-around max-h-[400px]"
+          >
+            <img
+              class="rounded-full value-3"
+              src="/designoo-website/assets/images/illustration-australia.svg"
+              alt="Illustration representing Australia"
+              loading="lazy"
+            />
+            <div class="md:text-left lg:text-center flex flex-col items-center">
+              <h3
+                class="font-medium text-[20px] leading-[26px] tracking-[5px] text-[var(--design-text-black)] uppercase mb-8"
+                data-i18n="locationsTranslations.locations[1].country"
+              >
+                Australia
+              </h3>
+              <a
+                class="btn-animation location w-fit bg-[var(--design-hover-beach)] text-[var(--system-black)] font-semibold py-3 px-6 rounded-lg shadow transition-colors duration-200 uppercase"
+                href="./locations.html"
+              >
+                <span data-i18n="locationsTranslations.seeMore"
+                  >See Location</span
+                >
+              </a>
+            </div>
+          </div>
+          <div
+            class=" slideScaleRotateFade flex flex-col md:flex-row lg:flex-col items-center gap-8 text-center md:justify-around max-h-[400px]"
+          >
+            <img
+              class="rounded-full value-2"
+              src="/designoo-website/assets/images/illustration-united-kingdom.svg"
+              alt="Illustration representing United Kingdom"
+              loading="lazy"
+            />
+            <div class="md:text-left lg:text-center flex flex-col items-center">
+              <h3
+                class="font-medium text-[20px] leading-[26px] tracking-[5px] text-[var(--design-text-black)] uppercase mb-8"
+                data-i18n="locationsTranslations.locations[2].country"
+              >
+                United Kingdom
+              </h3>
+              <a
+                class="btn-animation location w-fit bg-[var(--design-hover-beach)] text-[var(--system-black)] font-semibold py-3 px-6 rounded-lg shadow transition-colors duration-200 uppercase"
+                href="./locations.html"
+              >
+                <span data-i18n="locationsTranslations.seeMore">
+                  See Location
+                </span></a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer
+      class="bg-[#1d1c1e] text-white flex flex-col md:px-[60px] gap-5 justify-center items-center pt-12"
+    >
+      <div class="container">
+        <nav
+          class="md:flex md:justify-between md:items-center md:w-full md:pt-32 md:pb-5 md:border-b md:border-white/10"
+        >
+          <a
+            class="w-64 md:w-52 pt-24 pb-16 md:pt-0 md:pb-0 flex justify-center"
+            href="../index.html"
+            aria-label="Designo - Home"
+            data-i18n-aria="header.ariaLabel"
+          >
+            <img
+              class="max-h-full max-w-full"
+              src="/designoo-website/assets/images/logo-white.webp"
+              alt="Designo Company Logo - white"
+              loading="lazy"
+              width="208"
+              height="28"
+            />
+          </a>
+          <ul
+            class="flex flex-col md:flex-row gap-5 text-center text-2xl md:text-base tracking-widest md:h-full md:items-center"
+            aria-label="Footer Navigation"
+          >
+            <li>
+              <a
+                class="uppercase hover:underline"
+                href="./about-us.html"
+                data-i18n="footer.navItems.aboutUs"
+                >Our Company</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase hover:underline"
+                href="./locations.html"
+                data-i18n="footer.navItems.locations"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a
+                class="uppercase hover:underline"
+                href="./contact.html"
+                data-i18n="footer.navItems.contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="md:w-full md:flex md:justify-between md:items-start pb-10 pt-5"
+        >
+          <address
+            class="text-[#888889] text-center leading-[25px] md:flex md:justify-between md:items-start md:min-w-[65%] lg:justify-start lg:gap-32"
+          >
+            <p class="my-7 md:my-0">
+              <strong data-i18n="footer.address.office"
+                >Designo Central Office</strong
+              >
+              <span class="block" data-i18n="footer.address.street"
+                >3886 Wellington Street</span
+              >
+              <span class="block" data-i18n="footer.address.city"
+                >Toronto, Ontario M9C 3J5</span
+              >
+            </p>
+            <p class="mb-7 md:my-0">
+              <span class="block" data-i18n="footer.address.contactUs"
+                >Contact Us (Central Office)</span
+              >
+              <span class="block">
+                <a href="tel:+12538638967" data-i18n="footer.address.phone"
+                  >P: +1 253-863-8967</a
+                ></span
+              >
+              <span class="block">
+                <a
+                  href="mailto:contact@designo.com"
+                  data-i18n="footer.address.email"
+                  >M: contact@designo.com</a
+                ></span
+              >
+            </p>
+          </address>
+          <ul class="social-links flex gap-3.5 pb-5">
+            <li>
+              <a
+                href="https://www.facebook.com/YourPage"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-facebook.svg"
+                  alt="Visit our Facebook page"
+                  data-i18n-alt="footer.socialLinks.facebook"
+                  loading="lazy"
+                  fetchPriority="low"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/YourChannel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-youtube.svg"
+                  alt="Watch our YouTube videos"
+                  data-i18n-alt="footer.socialLinks.youtube"
+                  loading="lazy"
+                  fetchPriority="low"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/YourProfile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-twitter.svg"
+                  alt="Follow us on Twitter"
+                  data-i18n-alt="footer.socialLinks.twitter"
+                  loading="lazy"
+                  fetchPriority="low"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pinterest.com/YourProfile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-pinterest.svg"
+                  alt="Explore our Pinterest boards"
+                  data-i18n-alt="footer.socialLinks.pinterest"
+                  loading="lazy"
+                  fetchPriority="low"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/YourProfile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/designoo-website/assets/images/icon-instagram.svg"
+                  alt="See our Instagram photos"
+                  data-i18n-alt="footer.socialLinks.instagram"
+                  loading="lazy"
+                  fetchPriority="low"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

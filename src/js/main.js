@@ -72,20 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // --- Background Image Low-Quality Placeholder (LQIP) ---
-  const preloadedImg = new Image();
-  preloadedImg.src = "../assets/images/image-web-design-small.webp";
-  // "../image-web-design-small.webp";
-  // "/src/assets/images/desktop-compressed-webP/image-web-design-small.webp";
-  document.body.appendChild(preloadedImg);
-  preloadedImg.addEventListener("load", () => {
-    document.querySelectorAll(".hero").forEach((element) => {
-      element.classList.add("high-res");
-    });
-    // Remove the preloaded image to avoid layout shifting.
-    document.body.removeChild(preloadedImg);
-  });
-
   // --- Theme Toggle Functionality ---
   /**
    * Update the theme images based on the current theme.
